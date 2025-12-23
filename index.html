@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDZIAL 2.0 - Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-enhancements.css">
+</head>
+<body>
+    <!-- SECTION 1: HERO/INTRO -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Logo Section -->
+            <div style="margin-bottom: 30px;">
+                <!-- Make sure this file is in the SAME folder as index.html -->
+                <img src="C:\Users\siva shankaran.D\OneDrive\Desktop\SIMATHS\EDZIAL 2.0 LOGO 1.png"
+                     alt="EDZIAL 2.0 Logo"
+                     style="height: 200px; width: auto; object-fit: contain; margin-bottom: 20px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));">
+
+            </div>
+            
+            <!-- University Name -->
+            <h2 class="uni-title">
+                SAVEETHA INSTITUTE OF MEDICAL AND TECHNICAL SCIENCES
+            </h2>
+            <p class="uni-subtitle">
+                CHENNAI, TN, INDIA
+            </p>
+            
+            <!-- Event Title -->
+            <h1 class="event-title">EDZIAL 2.0</h1>
+            <p class="tagline">Join us for a memorable experience</p>
+            <button class="cta-button" onclick="scrollToDetails()">Explore More</button>
+        </div>
+    </section>
+
+    <!-- SECTION 2: EVENT DETAILS (DAY-WISE) -->
+    <section class="details-section" id="details">
+        <h2>Event Schedule</h2>
+        <p class="details-intro">
+            EDZIAL 2.0 is a multi-day technical and cultural event organized to promote learning, innovation, 
+            sportsmanship, and creativity among students through workshops, conferences, competitions, and 
+            cultural performances.
+        </p>
+
+        <div class="event-details-grid">
+            <!-- Day 1 - Sports -->
+            <div class="detail-card">
+                <div class="detail-icon">🏆</div>
+                <h3>Day 1 – Sports Events</h3>
+                <p>06 February 2026</p>
+                <p class="detail-desc">
+                    Outdoor and indoor sports events to showcase your skills, teamwork, and sportsmanship.
+                </p>
+                <button class="small-register-btn" onclick="openForm('sports')">
+                    Register for Sports
+                </button>
+            </div>
+
+            <!-- Day 2 - Workshop -->
+            <div class="detail-card">
+                <div class="detail-icon">🛠️</div>
+                <h3>Day 2 – Workshop</h3>
+                <p>11 February 2026</p>
+                <p class="detail-desc">
+                    Hands-on workshop sessions focusing on emerging technologies and real-time applications.
+                </p>
+                <button class="small-register-btn" onclick="openForm('workshop')">
+                    Register for Workshop
+                </button>
+            </div>
+
+            <!-- Day 3 - National Conference -->
+            <div class="detail-card">
+                <div class="detail-icon">📚</div>
+                <h3>Day 3 – National Conference</h3>
+                <p>17 February 2026</p>
+                <p class="detail-desc">
+                    National Conference featuring expert talks, research paper presentations, and discussions.
+                </p>
+                <button class="small-register-btn" onclick="openForm('conference')">
+                    Register for Conference
+                </button>
+            </div>
+
+            <!-- Day 4 - Tech & Non-Tech -->
+            <div class="detail-card">
+                <div class="detail-icon">💡</div>
+                <h3>Day 4 – Technical & Non-Technical Events</h3>
+                <p>24 February 2026</p>
+                <p class="detail-desc">
+                    A mix of coding, quizzes, fun games, and non-tech activities to engage every participant.
+                </p>
+                <button class="small-register-btn" onclick="openForm('tech')">
+                    Register for Tech / Non-Tech
+                </button>
+            </div>
+
+            <!-- Day 5 - Cultural Events -->
+            <div class="detail-card">
+                <div class="detail-icon">🎭</div>
+                <h3>Day 5 – Cultural Events</h3>
+                <p>25 February 2026</p>
+                <p class="detail-desc">
+                    Ramp Walk, Dance, and Mr. SSE events from 11:00 AM onwards near RB.
+                </p>
+                <button class="small-register-btn" onclick="openForm('cultural')">
+                    Register for Cultural Events
+                </button>
+            </div>
+
+            <!-- Venue -->
+            <div class="detail-card">
+                <div class="detail-icon">📍</div>
+                <h3>Venue</h3>
+                <p>Saveetha Institute of Medical &amp; Technical Sciences</p>
+                <p class="detail-desc">Main campus — RB Grounds. Click below for map & directions.</p>
+                <button class="small-register-btn" onclick="openVenue()">
+                    View Venue
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT -->
+    <section class="contact-section">
+        <h2 class="contact-title">Contact Us</h2>
+        <div class="contact-grid">
+            <!-- Contacts as 2x2 grid -->
+            <div class="contact-contacts">
+                <div class="contact-card">
+                    <div class="contact-icon" aria-hidden="true">📞</div>
+                    <div>
+                        <h3>Suriya</h3>
+                        <p><a href="tel:+919345877019">+91 93458 77019</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon" aria-hidden="true">📞</div>
+                    <div>
+                        <h3>Hasya</h3>
+                        <p><a href="tel:+918148814292">+91 81488 14292</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon" aria-hidden="true">📞</div>
+                    <div>
+                        <h3>Thulasi Krishna</h3>
+                        <p><a href="tel:+917989010927">+91 79890 10927</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon" aria-hidden="true">📞</div>
+                    <div>
+                        <h3>Ragav</h3>
+                        <p><a href="tel:+919940673518">+91 99406 73518</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <p>Follow us:</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="X">🐦</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer: centered developer credit below contacts -->
+            <div class="contact-footer">
+                <p class="dev-inline centered">Devloped by <a href="#" class="dev-link">Preethika N</a> <span class="dev-role"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
